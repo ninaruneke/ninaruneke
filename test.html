@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		* {
+	  		box-sizing: border-box;
+		}
+		/* force scrollbar */
+		html { overflow-y: scroll; }
+		body {
+		  font-family: sans-serif;
+		}
+		/* ---- isotope ---- */
+		.grid {
+		  background: #fff;
+		}
+		/* clear fix */
+		.grid:after {
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
+		/* ---- .grid-item ---- */
+		.grid-sizer, .grid-item {
+		  width: 99%;
+
+		}
+		.grid-item {
+		  float: left;
+
+		  padding: 10px;
+		  background: #D2D2D4;
+		  margin: 5px 0px 5px 0px;
+		}
+		.grid-item img {
+		  display: block;
+		  max-width: 100%;
+		 } 
+		
+		.row.no-gutter {
+		  margin-left: 0;
+		  margin-right: 0;
+		}
+
+		.row.no-gutter [class*='col-']:not(:first-child),
+		.row.no-gutter [class*='col-']:not(:last-child) {
+		  padding-right: 0;
+		  padding-left: 0;
+		}
+		
+		.wrapper p {
+			position:relative;
+			bottom:30px;
+			left:0px;
+			visibility:hidden;
+		}
+		#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  height: auto;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  width: 660px;
+}
+#mainwrapper .box {
+    border: 5px solid #fff;
+    cursor: pointer;
+    height: 182px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+ 
+#mainwrapper .box img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+#mainwrapper .box .caption {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+#mainwrapper .box .simple-caption {
+    height: 30px;
+    width: 200px;
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+#mainwrapper .box:hover .simple-caption {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+	</style>
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+        <!--Font Awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<script src="masonry.pkgd.min.js"></script>
+</head>
+<body>
+	<h1>Ninas portfolio!</h1>
+
+<div class="row no-gutter">
+	<div class="col-xs-12 col-sm-6">
+		<div class="grid">
+		  <div class="grid-sizer"></div>
+		  <div class="grid-item">
+		  	<h4>
+            	<span class="label label-danger">Webb</span>
+            	<span class="label label-warning">UX</span>
+            	<span class="label label-primary">Informationsdesign</span>
+          	</h4>
+          	<div class="wrapper">
+			    <img src="img/oppna_dorren2.jpg" class="hover">
+			    <p class="text">Text text</p>
+		    </div>
+		  </div>
+		  <div class="grid-item mainwrapper">
+		    <h4>
+            <span class="label label-success">Illustrator</span>
+            <span class="label label-info">inDesign</span>
+          	</h4>
+          	<div id="box-1" class="box">
+	          	<img id="image-1" src="img/ntk_liten.jpg" class="img-responsive">
+	          	<span class="caption simple-caption">
+	          			<p>Hej hej</p>
+	          	</span>
+          	</div>
+		  </div>
+		  <div class="grid-item">
+		  	<h4>
+			  	<span class="label label-success">Fotografering</span>
+		  	</h4>
+		    <img src="img/DSC_9439.jpg" />
+		  </div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		  <div class="grid">
+			  <div class="grid-sizer"></div>
+			  <div class="grid-item">
+			    <h4>
+		            <span class="label label-default">Projekt</span>
+        		</h4>
+          		<img src="img/datatjej13.jpg" class="img-responsive">
+			  </div>
+			  <div class="grid-item">
+			    <h4>
+            		<span class="label label-default">Projekt</span>
+          		</h4>
+          		<div class="col-xs-12 col-sm-6">
+          			<h1>Examensarbete</h1><small>Research of remote usability test methods</small>
+          		</div>
+          		<div class="col-xs-12 col-sm-6">
+          			<img src="img/tieto.jpg" class="img-responsive" alt="Tieto">
+          		</div>
+			  </div>
+			  <div class="grid-item">
+			    <h4>
+            		<span class="label label-success">Blender</span>
+          		</h4>
+          		<img src="img/TeaParty.png" class="img-responsive">
+			  </div>
+		</div>
+	</div>
+</div>
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+  			// init Masonry
+			var $grid = $('.grid').masonry({
+			    itemSelector: '.grid-item',
+			    percentPosition: true,
+			    columnWidth: '.grid-sizer'
+			});
+			// layout Isotope after each image loads
+			$grid.imagesLoaded().progress( function() {
+			    $grid.masonry();
+			});  
+		});
+
+		$('.hover').mouseover(function() {
+			$('.text').css("visibility","visible");
+		});
+
+		$('.hover').mouseout(function() {
+			$('.text').css("visibility","hidden");
+		});
+	</script>
+</body>
+</html>
